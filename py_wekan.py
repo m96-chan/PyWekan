@@ -114,6 +114,10 @@ class PyWekan:
         self._ctx = ctx
 
     def boards(self) -> List[PyWekanBoard]:
+        """
+        Get only context Boards
+        :return: PyWekanBoard list of context...
+        """
         return [
             PyWekanBoard(b['_id'], b, self._ctx)
             for b in self._ctx.get('api/boards')

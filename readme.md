@@ -13,4 +13,3 @@ ctx = PyWekanContext("user_name", "token")
 boards = PyWekan(ctx).boards()
 ```
 
-
