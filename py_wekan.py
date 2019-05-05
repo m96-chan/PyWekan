@@ -159,7 +159,9 @@ class PyWekan:
 
 
 class PyWekanUser(_PyWekanObject):
-
+    """
+    Wekan user object
+    """
     @property
     def id(self) -> str:
         return self._id
@@ -169,6 +171,10 @@ class PyWekanUser(_PyWekanObject):
 
 
 class PyWekanBoard(_PyWekanObject):
+    """
+    Wekan board object
+    """
+
     @property
     def title(self) -> str:
         return self._raw_data.get('title')
@@ -214,6 +220,9 @@ class PyWekanBoard(_PyWekanObject):
 
 
 class PyWekanSwimLane(_PyWekanObject):
+    """
+    Wekan swimlane object
+    """
     @property
     def title(self) -> str:
         return self._raw_data.get('title')
@@ -227,6 +236,9 @@ class PyWekanSwimLane(_PyWekanObject):
 
 
 class PyWekanList(_PyWekanObject):
+    """
+    Wekan list object
+    """
     @property
     def title(self) -> str:
         return self._raw_data.get('title')
@@ -252,6 +264,9 @@ class PyWekanList(_PyWekanObject):
 
 
 class PyWekanCard(_PyWekanObject):
+    """
+    Wekan Card object
+    """
     @property
     def title(self) -> str:
         return self._raw_data.get('title')
